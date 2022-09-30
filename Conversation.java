@@ -16,6 +16,7 @@ public class Conversation {
     System.out.print("How many rounds of conversation do you want to have?");
     int numRounds  = input.nextInt();
     input.nextLine();
+
     /** Print statement that asks the user a question */
     System.out.println("Great! What do you want to talk about?");
     transcript.add("Great! What do you want to talk about?");
@@ -61,7 +62,6 @@ public class Conversation {
       if (flag == 0){
         int index = rand.nextInt(answers.length);
         System.out.println(answers[index]);
-        //numRounds -= 1;
         transcript.add(answers[index]);
       }
       if (flag == 1){
